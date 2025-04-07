@@ -1,4 +1,4 @@
-/* Dynamic, Modern Academic Website Theme */
+/* Modern Academic Website Theme (Closer to your old site) */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
@@ -10,38 +10,33 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to right, #eef2f3, #ffffff);
-  color: #222;
+  background-color: #f0f4f8; /* Soft gray background */
+  color: #333;
   line-height: 1.75;
   padding: 0;
-  transition: background-color 0.4s, color 0.4s;
 }
 
 header {
-  background: linear-gradient(to right, #4a00e0, #8e2de2);
+  background-color: #004080; /* Deep blue for the header */
   color: white;
   padding: 2rem 1rem;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-  position: relative;
-  z-index: 1;
 }
 
 header h1 {
   font-size: 2.5rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
 }
 
 nav {
-  background-color: #ffffffcc;
-  backdrop-filter: blur(10px);
+  background-color: #ffffffcc; /* Transparent background with blur effect */
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid #ddd;
   padding: 0.75rem 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 nav ul {
@@ -49,14 +44,13 @@ nav ul {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   list-style-type: none;
   gap: 1.5rem;
 }
 
 nav ul li a {
   text-decoration: none;
-  color: #4a00e0;
+  color: #004080; /* Deep blue for links */
   font-weight: 600;
   padding: 0.5rem 0.8rem;
   border-radius: 5px;
@@ -64,73 +58,33 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #ede7f6;
-  color: #1a237e;
-  transform: scale(1.05);
+  background-color: #cce0ff; /* Light blue hover effect */
+  color: #002b5c;
 }
 
 main {
-  max-width: 960px;
+  max-width: 900px;
   margin: 2.5rem auto;
   padding: 2.5rem;
   background-color: #fff;
-  border-radius: 16px;
+  border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-  transition: box-shadow 0.3s;
-}
-
-main:hover {
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
-}
-
-.hero {
-  text-align: center;
-  margin-bottom: 2.5rem;
-  animation: fadeInUp 1s ease-out;
-}
-
-.hero h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #3c3c3c;
-}
-
-section {
-  margin-bottom: 2.5rem;
 }
 
 footer {
   text-align: center;
   padding: 2rem 1rem;
   font-size: 0.9rem;
-  color: #666;
+  color: #555;
   border-top: 1px solid #ddd;
-  background-color: #fafafa;
-  margin-top: 4rem;
+  background-color: #f8f8f8;
+  margin-top: 3rem;
 }
 
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
     align-items: center;
-  }
-
-  .hero h2 {
-    font-size: 1.6rem;
   }
 
   main {
